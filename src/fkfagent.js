@@ -3,7 +3,7 @@ const tagForRemoving = ["span", "p", "h1", "h2", "h3", "h4", "h5", "h6"];
 let replaceText;
 
 browser.storage.sync.get("replaceText").then((res) => {
-  replaceText = res.replaceText;
+  replaceText = res.replaceText || "";
 });
 
 function replaceFoundedMessage(message) {
