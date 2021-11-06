@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "fkfagent@mail.ru",
+  "name": "Not a foreign agent",
   "version": "1.0",
 
   "description": "Remove every line included information about foreign agent info.",
@@ -13,7 +13,7 @@
     "default_popup": "popup/configs.html",
     "browser_style": true
   },
-  "permissions": ["storage", "activeTab", "webRequest", "tabs"],
+  "permissions": ["storage", "tabs"],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
