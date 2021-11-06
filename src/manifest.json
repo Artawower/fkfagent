@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "fkfagent@mail.ru",
+  "version": "1.0",
+
+  "description": "Remove every line included information about foreign agent info.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "artawower@protonmail.com"
+    }
+  },
+  "icons": {
+    "48": "icons/hood.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/hood.png",
+    "default_title": "Disable foreign agent popup",
+    "default_popup": "popup/configs.html",
+    "browser_style": true
+  },
+  "permissions": ["storage", "activeTab", "webRequest", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["browser-polyfill.min.js", "fkfagent.js"]
+    }
+  ]
+}

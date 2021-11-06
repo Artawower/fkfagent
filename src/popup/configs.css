@@ -1,0 +1,21 @@
+
+body {
+    padding: 0 16px 16px 16px;
+    background: #455A64
+}
+
+h1, h4, p {
+    color: #FF4081;
+}
+
+input {
+    height: 32px;
+    background: #607D8B;
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 12px;
+}
+
+input:focus {
+    outline: none;
+}
