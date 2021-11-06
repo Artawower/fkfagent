@@ -4,11 +4,6 @@
   "version": "1.0",
 
   "description": "Remove every line included information about foreign agent info.",
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "artawower@protonmail.com"
-    }
-  },
   "icons": {
     "48": "icons/hood.png"
   },
